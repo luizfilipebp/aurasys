@@ -4,6 +4,6 @@ import br.com.fiap.core.model.Estabelecimento;
 import br.com.fiap.core.model.Page;
 import br.com.fiap.core.model.valueobject.enums.ServicoBeleza;
 
-public interface BuscarEstabelecimentoPeloServico {
+public interface BuscarEstabelecimentoPeloServicoUseCase {
     Page<Estabelecimento> buscar(ServicoBeleza servico, int numeroPagina, int tamanhoPagina);
 }

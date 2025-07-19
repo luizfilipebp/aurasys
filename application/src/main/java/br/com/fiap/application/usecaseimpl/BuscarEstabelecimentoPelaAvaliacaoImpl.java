@@ -4,9 +4,9 @@ import br.com.fiap.application.gateway.BuscarEstabelecimentoPelaAvaliacaoGateway
 import br.com.fiap.core.model.Avaliacao;
 import br.com.fiap.core.model.Estabelecimento;
 import br.com.fiap.core.model.Page;
-import br.com.fiap.usecase.BuscarEstabelecimentoPelaAvaliacao;
+import br.com.fiap.usecase.BuscarEstabelecimentoPelaAvaliacaoUseCase;
 
-public class BuscarEstabelecimentoPelaAvaliacaoImpl implements BuscarEstabelecimentoPelaAvaliacao {
+public class BuscarEstabelecimentoPelaAvaliacaoImpl implements BuscarEstabelecimentoPelaAvaliacaoUseCase {
 
     private final BuscarEstabelecimentoPelaAvaliacaoGateway gateway;
 

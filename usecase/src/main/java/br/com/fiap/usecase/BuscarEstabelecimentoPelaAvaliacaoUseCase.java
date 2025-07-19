@@ -4,6 +4,6 @@ import br.com.fiap.core.model.Avaliacao;
 import br.com.fiap.core.model.Estabelecimento;
 import br.com.fiap.core.model.Page;
 
-public interface BuscarEstabelecimentoPelaAvaliacao {
+public interface BuscarEstabelecimentoPelaAvaliacaoUseCase {
     Page<Estabelecimento> buscar(Avaliacao avaliacao, int numeroPagina, int tamanhoPagina);
 }

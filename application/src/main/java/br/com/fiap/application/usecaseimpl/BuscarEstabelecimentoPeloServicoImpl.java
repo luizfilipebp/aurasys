@@ -4,9 +4,9 @@ import br.com.fiap.application.gateway.BuscarEstabelecimentoPeloServicoGateway;
 import br.com.fiap.core.model.Estabelecimento;
 import br.com.fiap.core.model.Page;
 import br.com.fiap.core.model.valueobject.enums.ServicoBeleza;
-import br.com.fiap.usecase.BuscarEstabelecimentoPeloServico;
+import br.com.fiap.usecase.BuscarEstabelecimentoPeloServicoUseCase;
 
-public class BuscarEstabelecimentoPeloServicoImpl implements BuscarEstabelecimentoPeloServico {
+public class BuscarEstabelecimentoPeloServicoImpl implements BuscarEstabelecimentoPeloServicoUseCase {
 
     private final BuscarEstabelecimentoPeloServicoGateway gateway;
 

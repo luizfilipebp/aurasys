@@ -4,9 +4,9 @@ import br.com.fiap.application.gateway.BuscarEstabelecimentoPeloEnderecoGateway;
 import br.com.fiap.core.model.Estabelecimento;
 import br.com.fiap.core.model.Page;
 import br.com.fiap.core.model.valueobject.Endereco;
-import br.com.fiap.usecase.BuscarEstabelecimentoPeloEndereco;
+import br.com.fiap.usecase.BuscarEstabelecimentoPeloEnderecoUseCase;
 
-public class BuscarEstabelecimentoPeloEnderecoImpl implements BuscarEstabelecimentoPeloEndereco {
+public class BuscarEstabelecimentoPeloEnderecoImpl implements BuscarEstabelecimentoPeloEnderecoUseCase {
 
     private final BuscarEstabelecimentoPeloEnderecoGateway gateway;
 
