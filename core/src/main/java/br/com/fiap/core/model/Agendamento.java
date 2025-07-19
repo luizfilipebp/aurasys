@@ -56,4 +56,8 @@ public class Agendamento {
         }
         this.status = StatusAgendamento.REALIZADO;
     }
+
+    public StatusAgendamento getStatus() {
+        return this.status;
+    }
 }
