@@ -44,15 +44,15 @@ O projeto segue os princípios da **Clean Architecture**, com as seguintes camad
 
 2. Navegue até o diretório do projeto:
 
- ```bash
-cd aurasys
-   ```
+    ```bash
+   cd aurasys
+      ```
 
 3. Execute o projeto:
 
-```bash
-./gradlew bootRun
-```
+   ```bash
+   ./gradlew bootRun
+   ```
 
 ## Documentação da API
 Acesse a documentação interativa da API em:
