@@ -3,15 +3,13 @@ package br.com.fiap.core.model;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class EstabelecimentoTest {
 
-    private Estabelecimento estabelecimento;
+    private string estabelecimento;
 
     @BeforeEach
     void setUp() {
-        estabelecimento = new Estabelecimento("Salão Beleza", "Rua das Flores, 123", "123456789");
+        estabelecimento = new string("Salão Beleza", "Rua das Flores, 123", "123456789");
     }
 
     @Test

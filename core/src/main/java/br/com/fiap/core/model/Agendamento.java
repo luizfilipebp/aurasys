@@ -5,21 +5,22 @@ import br.com.fiap.core.model.valueobject.enums.ServicoBeleza;
 import br.com.fiap.core.model.valueobject.enums.StatusAgendamento;
 
 import java.time.LocalDateTime;
+import java.util.Objects;
 
 public class Agendamento {
 
-    private Estabelecimento estabelecimento;
-    private Profissional profissional;
+    private String idEstabelecimento;
+    private String idProfissional;
     private ServicoBeleza servico;
     private LocalDateTime dataHora;
     private StatusAgendamento status;
 
-    public Agendamento(Estabelecimento estabelecimento, Profissional profissional, ServicoBeleza servico, LocalDateTime dataHora) {
-        if (!profissional.isDisponivel(dataHora)) {
-            throw new AgendamentoRuntimeException("O profissional não está disponível no horário solicitado.");
-        }
-        this.estabelecimento = estabelecimento;
-        this.profissional = profissional;
+    public Agendamento(String idEstabelecimento, String profissional, ServicoBeleza servico, LocalDateTime dataHora) {
+//        if (!profissional.isDisponivel(dataHora)) {
+//            throw new AgendamentoRuntimeException("O profissional não está disponível no horário solicitado.");
+//        }
+        this.idEstabelecimento = idEstabelecimento;
+        this.idProfissional = profissional;
         this.servico = servico;
         this.dataHora = dataHora;
         this.status = StatusAgendamento.PENDENTE;
@@ -43,9 +44,9 @@ public class Agendamento {
         if (status == StatusAgendamento.REALIZADO) {
             throw new AgendamentoRuntimeException("Não é possível reagendar um agendamento já realizado.");
         }
-        if (!profissional.isDisponivel(novaDataHora)) {
-            throw new AgendamentoRuntimeException("O profissional não está disponível no novo horário solicitado.");
-        }
+//        if (!idProfissional.isDisponivel(novaDataHora)) {
+//            throw new AgendamentoRuntimeException("O profissional não está disponível no novo horário solicitado.");
+//        }
         this.dataHora = novaDataHora;
         this.status = StatusAgendamento.PENDENTE;
     }
@@ -59,5 +60,46 @@ public class Agendamento {
 
     public StatusAgendamento getStatus() {
         return this.status;
+    }
+
+    public ServicoBeleza getServico() {
+        return servico;
+    }
+
+    public LocalDateTime getDataHora() {
+        return dataHora;
+    }
+
+    public void setDataHora(LocalDateTime dataHora) {
+        this.dataHora = dataHora;
+    }
+
+
+    public String getIdEstabelecimento() {
+        return idEstabelecimento;
+    }
+
+    public void setIdEstabelecimento(String idEstabelecimento) {
+        this.idEstabelecimento = idEstabelecimento;
+    }
+
+    public String getIdProfissional() {
+        return idProfissional;
+    }
+
+    public void setIdProfissional(String idProfissional) {
+        this.idProfissional = idProfissional;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Agendamento that = (Agendamento) o;
+        return Objects.equals(idProfissional, that.idProfissional) && Objects.equals(dataHora, that.dataHora);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(idProfissional, dataHora);
     }
 }

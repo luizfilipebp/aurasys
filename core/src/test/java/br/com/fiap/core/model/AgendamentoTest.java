@@ -13,14 +13,14 @@ import static org.mockito.Mockito.*;
 
 class AgendamentoTest {
 
-    private Estabelecimento estabelecimento;
+    private string estabelecimento;
     private Profissional profissional;
     private ServicoBeleza servico;
     private LocalDateTime dataHora;
 
     @BeforeEach
     void setUp() {
-        estabelecimento = mock(Estabelecimento.class);
+        estabelecimento = mock(string.class);
         profissional = mock(Profissional.class);
         servico = ServicoBeleza.CORTE_CABELO;
         dataHora = LocalDateTime.now().plusDays(1);
