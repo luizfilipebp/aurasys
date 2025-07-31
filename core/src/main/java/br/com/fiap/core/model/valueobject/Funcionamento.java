@@ -10,6 +10,7 @@ public class Funcionamento {
     private final LocalTime horaFechamento;
     private final EnumSet<DayOfWeek> diasFuncionamento;
 
+
     public Funcionamento(LocalTime horaAbertura, LocalTime horaFechamento, EnumSet<DayOfWeek> diasFuncionamento) {
         this.horaAbertura = horaAbertura;
         this.horaFechamento = horaFechamento;

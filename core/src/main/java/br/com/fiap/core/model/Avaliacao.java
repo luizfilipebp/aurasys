@@ -4,19 +4,19 @@ public class Avaliacao {
 
     private int nota;
     private String comentario;
-    private Cliente cliente;
-    private Profissional profissional;
-    private Estabelecimento estabelecimento;
+    private String idCliente;
+    private String idProfissional;
+    private String idEstabelecimento;
 
-    public Avaliacao(int nota, String comentario, Cliente cliente, Profissional profissional, Estabelecimento estabelecimento) {
+    public Avaliacao(int nota, String comentario, String idCliente, String idProfissional, String idEstabelecimento) {
         if (nota < 1 || nota > 5) {
             throw new IllegalArgumentException("A nota deve estar entre 1 e 5.");
         }
         this.nota = nota;
         this.comentario = comentario;
-        this.cliente = cliente;
-        this.profissional = profissional;
-        this.estabelecimento = estabelecimento;
+        this.idCliente = idCliente;
+        this.idProfissional = idProfissional;
+        this.idEstabelecimento = idEstabelecimento;
     }
 
     public int getNota() {
@@ -27,15 +27,27 @@ public class Avaliacao {
         return comentario;
     }
 
-    public Cliente getCliente() {
-        return cliente;
+    public String getIdCliente() {
+        return idCliente;
     }
 
-    public Profissional getProfissional() {
-        return profissional;
+    public void setIdCliente(String idCliente) {
+        this.idCliente = idCliente;
     }
 
-    public Estabelecimento getEstabelecimento() {
-        return estabelecimento;
+    public String getIdProfissional() {
+        return idProfissional;
+    }
+
+    public void setIdProfissional(String idProfissional) {
+        this.idProfissional = idProfissional;
+    }
+
+    public String getIdEstabelecimento() {
+        return idEstabelecimento;
+    }
+
+    public void setIdEstabelecimento(String idEstabelecimento) {
+        this.idEstabelecimento = idEstabelecimento;
     }
 }

@@ -5,5 +5,6 @@ public enum StatusAgendamento {
     CONFIRMADO,
     CANCELADO,
     REALIZADO,
+    REAGENDADO,
     NAO_COMPARECIDO
 }
