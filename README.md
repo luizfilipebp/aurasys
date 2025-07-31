@@ -35,12 +35,6 @@ O projeto segue os princípios da **Clean Architecture**, com as seguintes camad
 - **Railway**: Configurações para o ambiente de produção hospedado no Railway, definidas no arquivo
   `application-railway.yml`.
 
-### Variáveis de Ambiente no Railway
-
-Certifique-se de configurar as seguintes variáveis no painel do Railway:
-
-- `SPRING_PROFILES_ACTIVE=railway`
-
 ## Como Executar Localmente
 
 1. Clone o repositório:
