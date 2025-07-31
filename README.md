@@ -45,7 +45,7 @@ Certifique-se de configurar as seguintes variáveis no painel do Railway:
 
 1. Clone o repositório:
    ```bash
-   git clone <link-do-repositorio>
+   git clone https://github.com/luizfilipebp/aurasys
    ```
 
 - Navegue até o diretório do projeto:
