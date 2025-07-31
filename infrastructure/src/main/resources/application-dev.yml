@@ -1,0 +1,33 @@
+spring:
+  flyway:
+    locations: classpath:migration
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/aurasys
+    username: root
+    password: root
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+server:
+  port: 8081
+  tomcat:
+    uri-encoding: UTF-8
+  servlet:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
+
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
