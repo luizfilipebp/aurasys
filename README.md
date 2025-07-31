@@ -42,13 +42,13 @@ O projeto segue os princípios da **Clean Architecture**, com as seguintes camad
    git clone https://github.com/luizfilipebp/aurasys
    ```
 
-- Navegue até o diretório do projeto:
+2. Navegue até o diretório do projeto:
 
  ```bash
 cd aurasys
    ```
 
-- Execute o projeto:
+3. Execute o projeto:
 
 ```bash
 ./gradlew bootRun
