@@ -5,6 +5,5 @@ import br.com.fiap.core.model.Estabelecimento;
 import br.com.fiap.core.model.Page;
 
 public interface BuscarEstabelecimentoPelaAvaliacaoGateway {
-
     Page<Estabelecimento> buscar(Avaliacao avaliacao, int numeroPagina, int tamanhoPagina);
 }
